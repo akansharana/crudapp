@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `post` (
   `id` int(11) NOT NULL,
   `username` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `post`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
+INSERT INTO `post` (`id`, `username`, `email`, `password`) VALUES
 (1, 'rana', 'akanshashu7248@gmail.com', 'asmdj332'),
 (3, 'akansha', 'ranakansha321@gmail.com', 'Amroha@123');
 
@@ -48,9 +48,9 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 --
 
 --
--- Indexes for table `users`
+-- Indexes for table `post`
 --
-ALTER TABLE `users`
+ALTER TABLE `post`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
@@ -59,9 +59,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `post`
 --
-ALTER TABLE `users`
+ALTER TABLE `post`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
