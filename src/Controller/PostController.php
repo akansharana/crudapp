@@ -8,7 +8,7 @@ class PostController extends AppController
 {
     public function index()
     {
-        $this->set('users', $this->User->find('all'));
+       $this->set('post', $this->Post->find('all'));
     }
 
     public function add(){
